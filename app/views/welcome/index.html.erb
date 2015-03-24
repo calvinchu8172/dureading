@@ -1,12 +1,20 @@
 
 <div class="welcome">
+  <div class="slider">
+    <ul class="pic">
+      <li><%=image_tag("slide0.jpg", :size =>"1280x800", :alt =>"missing")%></li>
+      <li><%=image_tag("slide1.jpg", :size =>"1280x800", :alt =>"missing")%></li>
+      <li><%=image_tag("slide2.jpg", :size =>"1280x800", :alt =>"missing")%></li>
+    </ul>
+    <div class="clearFix"></div>
+  </div>
 </div>
 
 
 <div class="welcome_wrapper">
   <div class="du_logo", title="Welcome to DUreading!">
     <%= link_to image_tag("du_logo.png", :size => "400x400", :alt => "du_logo"), books_path %>
-  </div>  
+  </div>
 
   <div class="log_in", title="Please log in">
     <% if current_user %>
